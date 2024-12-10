@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:test-atomizer": "node dist/test-atomizer/server/server.mjs"
+    "serve:ssr:test-atomizer": "node dist/test-atomizer/server/server.mjs",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +42,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "playwright-ng-schematics": "^1.2.2",
     "typescript": "~5.6.2"
   }
 }
