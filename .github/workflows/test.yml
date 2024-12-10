@@ -18,4 +18,4 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - uses: nrwl/nx-set-shas@v4
-    - run: pnpm exec nx affected -t build e2e
+    - run: npx nx affected -t build e2e
