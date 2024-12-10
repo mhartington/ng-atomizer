@@ -1,0 +1,5 @@
+<section>
+@for (todo of todos(); track todo.id) {
+  <todo-item [todo]="todo" (click)="toggleTodo(todo)" />
+}
+</section>
