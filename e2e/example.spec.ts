@@ -37,5 +37,5 @@ test('Toggle test and check length', async ({ page }) => {
 
   await page.waitForURL('/todos?q=completed');
   const listItems = page.locator('app-todos').getByRole('listitem');
-  await expect(listItems).toHaveCount(3);
+  await expect(listItems).toHaveCount(1);
 });
